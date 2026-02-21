@@ -1,0 +1,29 @@
+{
+    "id": "d149c9d0-bff4-4f33-87cf-fcde04f2dc7d",
+    "started_at": "2026-02-22T04:33:11.127339",
+    "finished_at": "2026-02-22T04:33:27.391934",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "nop__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "terminal-bench__9p5h8v8"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}
