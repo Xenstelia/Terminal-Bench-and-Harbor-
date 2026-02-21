@@ -1,24 +1,17 @@
 #!/bin/bash
-
-# Test Documentation: Installs uv/pytest and runs Python test suite.
+# Test Documentation: Verifies environment state after Oracle fix.
 mkdir -p /logs/verifier
 
-apt-get update && apt-get install -y curl
+# Install pytest and packaging in the system env so it can see the new Flask/ItsDangerous
+pip install pytest==8.4.1 packaging==24.0
 
-# Install uv for isolated test dependency management
-curl -LsSf https://astral.sh/uv/install.sh | sh
-source $HOME/.local/bin/env
+# Run pytest directly on the workspace
+# We use -v to see exactly which test fails in the harbor logs
+pytest -v /tests/test_outputs.py > /logs/verifier/pytest_log.txt 2>&1
 
-# Run pytest through uvx to verify system state
-uvx \
-  --with pytest==8.4.1 \
-  --with pytest-json-ctrf==0.3.5 \
-  --with packaging \
-  pytest --ctrf /logs/verifier/ctrf.json /tests/test_outputs.py -rA
-
-# Generate the reward based on pytest exit code
 if [ $? -eq 0 ]; then
   echo "1.0" > /logs/verifier/reward.txt
 else
+  # Debugging: if it fails, the log will be in the harbor job folder
   echo "0.0" > /logs/verifier/reward.txt
 fi
