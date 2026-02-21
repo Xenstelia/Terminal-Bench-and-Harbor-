@@ -1,0 +1,14 @@
+[task]
+name = "fix-python-dependency-conflict"
+category = "Dependency Lockfile Issues"
+timeout = 300
+
+[environment]
+image = "python:3.12-slim"
+
+[environment.runtime]
+python = "3.12"
+
+[verification]
+# This command triggers the Harbor evaluation logic
+command = "bash /tests/test.sh"

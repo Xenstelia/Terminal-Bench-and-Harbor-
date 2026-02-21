@@ -1,0 +1,29 @@
+{
+    "id": "995aa168-c264-4cb6-a6e3-2ce204ed972a",
+    "started_at": "2026-02-22T04:27:13.543972",
+    "finished_at": "2026-02-22T04:28:06.514370",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "nop__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "terminal-bench__euZAVGA"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}
