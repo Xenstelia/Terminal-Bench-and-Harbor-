@@ -1,0 +1,13 @@
+name = "fix-python-env"
+description = "Fix Python app failing due to missing environment variable and dependencies"
+timeout = 600
+
+[environment.runtime]
+python = "3.12"
+
+[environment.limits]
+memory = "2GiB"
+cpus = 2
+
+[verification]
+command = "bash tests/verify.sh"
