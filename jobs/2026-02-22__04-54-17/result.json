@@ -1,0 +1,29 @@
+{
+    "id": "b5c6a84f-0e6f-4f7e-9a66-9834869b1ee3",
+    "started_at": "2026-02-22T04:54:17.743326",
+    "finished_at": "2026-02-22T04:54:34.711591",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "nop__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "terminal-bench__GW4s4v4"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

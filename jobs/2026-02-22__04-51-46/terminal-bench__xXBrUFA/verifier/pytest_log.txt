@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.12, pytest-8.4.1, pluggy-1.6.0 -- /usr/local/bin/python3.12
+cachedir: .pytest_cache
+rootdir: /tests
+collecting ... collected 2 items
+
+../tests/test_outputs.py::test_dependency_versions PASSED                [ 50%]
+../tests/test_outputs.py::test_app_import PASSED                         [100%]
+
+============================== 2 passed in 0.07s ===============================

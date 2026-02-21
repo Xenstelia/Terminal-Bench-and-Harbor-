@@ -1,0 +1,88 @@
+{
+    "id": "11c25d61-4457-4d3d-b955-802c6022a9cc",
+    "task_name": "terminal-bench",
+    "trial_name": "terminal-bench__xXBrUFA",
+    "trial_uri": "file:///home/abinaya/Desktop/My_Practice/fix-python-env/jobs/2026-02-22__04-51-46/terminal-bench__xXBrUFA",
+    "task_id": {
+        "path": "terminal-bench"
+    },
+    "source": null,
+    "task_checksum": "5f9044e8ba9a9a8b5a27e73df9b0eeed31eee7b3a3d68f6bbbfbcb9e1c7ca7c3",
+    "config": {
+        "task": {
+            "path": "terminal-bench",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "terminal-bench__xXBrUFA",
+        "trials_dir": "jobs/2026-02-22__04-51-46",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "2543e3f5-5f3b-4c65-9c31-40e896d4cff7"
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-21T23:21:46.541005Z",
+    "finished_at": "2026-02-21T23:22:04.594719Z",
+    "environment_setup": {
+        "started_at": "2026-02-21T23:21:46.541480Z",
+        "finished_at": "2026-02-21T23:21:47.298826Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-21T23:21:47.298849Z",
+        "finished_at": "2026-02-21T23:21:47.298884Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-21T23:21:47.298911Z",
+        "finished_at": "2026-02-21T23:21:50.954657Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-21T23:21:50.954756Z",
+        "finished_at": "2026-02-21T23:21:54.223599Z"
+    }
+}
